@@ -1,0 +1,15 @@
+<p>data works!</p>
+<!-- <p>{{data|json}}</p> -->
+
+<div *ngIf="displayUser" class="user-cards">
+    <div *ngFor="let data of data" class="card">
+    
+      <p>ID: {{ data.id }}</p>
+      <p>title: {{ data.title }}</p>
+      <p><img src={{data.url}} ></p>
+      <p>thumbnailUrl:{{data.thumbnailUrl}}</p>
+    </div>
+  </div>
+  <!-- <p>{{ user.id }}</p>
+  <p>{{ user.name }}</p>
+  <p>{{ user.age }}</p> -->

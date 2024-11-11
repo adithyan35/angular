@@ -1,0 +1,12 @@
+<p>lerning works!</p>
+
+
+<div *ngIf="agentName">
+    {{agentName}}
+</div>
+
+
+<input type="text"  (input)="getdata($event)" >
+<button (click)="displaydata()">click me</button>
+
+{{displaydata()}}
